@@ -482,7 +482,7 @@ img{
 
 .footer-block{
     display: flex;
-    gap: 120px;
+    /* gap: 120px; */
     align-items: baseline;
 }
 
@@ -490,6 +490,8 @@ img{
     display: flex;
     flex-direction: column;
     padding: 0;
+
+    margin-right: 120px;
 }
 .web-bottom{
     font-family: "Raleway", sans-serif;
@@ -521,6 +523,7 @@ img{
 }
 
 .footer-link{
+    margin-right: 80px;
     padding: 0;
 }
 
@@ -554,7 +557,7 @@ img{
 }
 
 .subscribe{
-    margin: 0;
+    /* margin: 0; */
     /* width: 453px; */
     /* margin-left: 80px; */
     /* width: 100%; */
