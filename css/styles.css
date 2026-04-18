@@ -200,8 +200,7 @@ img {
     text-align: center;
     padding: 188px 0 188px;
     background-image:
-        linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/people.jpg);
+        linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -702,13 +701,14 @@ img {
     top: 24px;
     right: 24px;
 
-    border-radius: 4px;
+    border: 4px;
     width: 24px;
     height: 24px;
 
     border-radius: 100%;
-    stroke-width: 1px;
-    stroke: rgba(0, 0, 0, 0.1);
+    background-color: #e7e9fc;
+
+    /* stroke: rgba(0, 0, 0, 0.1); */
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -719,7 +719,8 @@ img {
     background-color: #404bbf;
 }
 
-.close:hover .close-icon {
+.close:hover .close-icon,
+.close:focus .close-icon {
     fill: #fff;
 }
 
@@ -736,7 +737,7 @@ img {
     text-align: center;
     color: #2e2f42;
 
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 
     /* margin: 72px 24px 16px; */
 }
@@ -769,9 +770,11 @@ img {
     width: 100%;
     height: 40px;
 
-    padding: 11px 34px;
+    padding: 11px 38px;
 
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-modal:hover,
@@ -795,7 +798,7 @@ img {
 
     fill: #2e2f42;
 
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .texteria {
@@ -884,6 +887,7 @@ img {
 }
 
 .button-modal {
+    display: block;
     border-radius: 4px;
     padding: 16px 32px;
     width: 169px;
@@ -892,7 +896,7 @@ img {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #4d5ae5;
 
-    margin: 0 95px;
+    margin: 0 auto;
 
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
