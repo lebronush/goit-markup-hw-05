@@ -701,11 +701,11 @@ img {
     top: 24px;
     right: 24px;
 
-    border: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
     width: 24px;
     height: 24px;
 
-    border-radius: 100%;
     background-color: #e7e9fc;
 
     /* stroke: rgba(0, 0, 0, 0.1); */
