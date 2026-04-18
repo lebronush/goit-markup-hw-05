@@ -747,6 +747,10 @@ img {
     /* margin: 72px 24px 16px; */
 }
 
+.modal-user {
+    margin-top: 0;
+}
+
 .content-modal {
     display: flex;
     flex-direction: column;
@@ -816,7 +820,7 @@ img {
     outline: none;
     resize: none;
 
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .texteria:hover,
@@ -854,7 +858,7 @@ img {
 
 .input-checkbox:checked + .label > .checkbox {
     border-radius: 2px;
-    fill: #fff;
+    fill: #f4f4fd;
     border: 1px solid #404bbf;
     background-color: #404bbf;
     border: none;
