@@ -710,7 +710,9 @@ img {
 
     /* stroke: rgba(0, 0, 0, 0.1); */
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close:hover,
@@ -722,6 +724,9 @@ img {
 .close:hover .close-icon,
 .close:focus .close-icon {
     fill: #fff;
+    transition:
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-icon {
@@ -852,6 +857,11 @@ img {
     fill: #fff;
     border: 1px solid #404bbf;
     background-color: #404bbf;
+    border: none;
+}
+
+.input-checkbox:checked + .checkbox .checkbox-icon {
+    fill: #f4f4fd;
 }
 
 .label {
@@ -872,12 +882,22 @@ img {
     border: 1px solid rgba(46, 47, 66, 0.4);
 
     fill: transparent;
+    background-color: transparent;
     padding: 4px 3px;
     margin-right: 8px;
+
+    transition:
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     width: 16px;
     height: 16px;
 }
+
+/* .checkbox-icon {
+    fill: transparent;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
 
 .privacy {
     line-height: 1.33333;
